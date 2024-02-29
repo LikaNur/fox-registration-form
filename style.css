@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: -0.41px;
+}
+
+section {
+    margin-top: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    height: 65%;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+header {
+    position: relative;
+    background: #D64200;
+    width: 100%;
+    height: 15.375em;
+    padding: 1em;
+    font-family: Roboto;
+}
+
+h1 { 
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 181.8%;
+    letter-spacing: 0.04em;  
+    padding-top: 0.8em;
+}
+
+label:not(.category) {
+    color: #D64200;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1em; 
+    margin-left: 1.6em;
+}
+
+div {
+    margin: 1.5em 2em;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    height: 2.75em;
+    padding: 1.5em;
+    margin-top: 0.625em;
+    border-radius: 0.8em;
+    font-size: 1.0625rem;
+    border-radius: 0.625em;
+    border: 1px solid #B8B6BF;
+}
+
+input:focus,
+textarea:focus,
+.incomesource:focus {
+    outline: none;
+    border-color: #D64200;
+    background-color: #fbfbfb;
+}
+
+.info6,
+.info7 {
+    margin: 1em 2em 2em;
+}
+
+.genderfields {
+    display: flex; 
+    justify-content: start;
+    gap: 2em; 
+}
+
+.category {
+    display: flex; 
+    align-items: center; 
+}
+
+.checkboxname {
+    vertical-align: top;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.radio:checked,
+.checkbox:checked {
+    background-color: #D64200; 
+    box-shadow: 0 0 0 10px #FFCBBA;
+    border: none;
+}
+
+.radio,
+.checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 50%;
+    border: 1px solid #B8B6BF;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.radio::before,
+.checkbox::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #D64200;
+    display: none; 
+}
+
+.radio:checked::before,
+.checkbox:checked::before {
+    content: "\2713"; 
+    font-size: 26px;
+    line-height: 1;
+    text-align: center;
+    color: #f4f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbiesfields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 46.5%;
+    gap: 2em;
+}
+
+.info8 {
+    margin-bottom: 20px;
+}
+
+.info8 label {
+    display: block; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info8 select {
+    width: 100%; 
+    height: 2.75em;
+    padding-left: 1.5em;
+    font-size: 1.0675rem;
+    appearance: none;
+    background-image: url(icon.png); 
+    background-repeat: no-repeat;
+    background-size: 1em auto;
+    background-position: calc(100% - 0.80em) center;
+    border-radius: 0.8em;
+    font-size: 1.0625rem;
+    border-radius: 0.625em;
+    border: 1px solid #B8B6BF;
+}
+
+.info8 select option:checked {
+    background-color: #D64200;
+    color: #282828;
+}
+
+.filebutton {
+    position: relative;
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.fileicon {
+    position: relative;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 197px;
+    height: 44px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.7em;
+    color: white;
+    border-radius: 8px;
+    background: #77767E;
+    box-shadow: 0px 16px 24px 0px rgba(50, 50, 71, 0.08), 0px 12px 12px 0px rgba(50, 50, 71, 0.08);
+}
+
+.filetext {
+    width: 60%;
+    padding-left: 15px;
+}
+
+.file {
+    display: none;
+}
+
+.range-group {
+    display: flex;
+}
+  
+.range-group input {
+    border: 1px solid rgb(135, 28, 28);
+}
+
+.range-group label {
+    width: 50px;
+    background-color: #D64200;
+    color:white;
+    border-radius: 0.5em;
+    padding:13px 0;
+    font-size:1em;
+    font-weight: 400;
+    text-align:center;
+    width: 110px;
+    height: 42px;
+    letter-spacing: 0.38px;
+    margin-top: 10px;
+}  
+
+textarea {
+    display: flex;
+    width: 100%;
+    height: 157px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #B8B6BF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0675rem;
+    padding: 1em 1.75em;
+}
+
+.info11 input {
+    appearance: none;
+}
+
+.create {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    height: 4.5em;
+    background-color: #fff;
+    border-radius: 0.8em;
+    border: 2px solid #D64200;
+    font-size: 1.0625rem;
+    letter-spacing: 0.46px;
+    color: #D64200;
+}
+
+.create:active {
+    color: #fff;
+    background-color: #D64200;
+}
+  
+::placeholder { 
+    color: #B8B6BF;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.31px;
+}
+
+@media (min-width:1024px){
+    body {
+        background-color: #F8F8F8;
+    }
+
+    section {
+        margin-top: 5em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .block{
+        max-width: 100%;
+        max-height: fit-content;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: [one] 50% [two] 50% [three];
+        grid-template-rows: repeat(15, 130px);
+    }
+
+    header {
+        background-color: #D64200;
+        text-align: center;
+        padding: 70px;
+        color: white;
+        font-size: 1.5em;
+        height: 90%;
+    }
+    
+    .logo {
+        height: 100%;
+        position: absolute;
+        top: 50px;
+        right: 130px;
+    }
+    
+    .info1, .info4, .info6, .info8, .info10 {
+        grid-column: one / two;
+    }
+    
+    .info2, .info5, .info7, .info9, .info11, .info13{
+        grid-column: two / three;
+    }
+    
+    .info3, .info12 {
+        grid-column: one / three;
+    }
+    
+    .info13 {
+        grid-row: 9 / 10;
+        margin-top: -20px;
+    }
+    
+    .hobbiesfields {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 5%;
+        margin-top: 10px;
+        margin-right: 10em;
+        margin-bottom: 3em;
+        gap: 1em;
+    }
+  
+    .create {
+        background: #D64200;
+        color: #fff;
+    }
+
+    input {
+       background-color:#F8F8F8;
+    }
+
+    .info12 textarea {
+        background-color: #F8F8F8;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive registration form</title>
+</head>
+<body>
+    <header>
+        <h1>Create Account</h1>
+        <img class="logo" src="logo.svg">
+    </header>
+    <section>
+        <form class="main" id="main" method="post">
+            <div class="info1">
+                <label for="name">First name*</label><br>
+                <input id="name" placeholder="Enter your first name" required>
+            </div>
+            <div class="info2">
+                <label for="surname">Last name*</label><br>
+                <input id="surname" placeholder="Enter your last name" required>
+            </div>
+            <div class="info3">
+                <label for="email">Email*</label><br>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="info4">
+                <label for="password">Password*</label><br>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="info5">
+                <label for="password2">Confirm Password*</label><br>
+                <input type="password" id="password2" placeholder="Confirm your password" required>
+            </div>
+            <div class="info6">
+                <label for="gender">Gender</label><br>
+                <div class="genderfields">
+                    <label class="category">
+                        <input class="radio" type="radio" name="gender" value="male">
+                        <span class="checkboxname">Male</span>
+                    </label>
+                    <label class="category">
+                        <input class="radio" type="radio" name="gender" value="female">
+                        <span class="checkboxname">Female</span>
+                    </label>
+                 </div>
+            </div>
+            <div class="info7">
+                <label for="hobbies">Hobbies</label><br>
+                <div class="hobbiesfields">
+                    <label class="category">
+                        <input class="checkbox" type="checkbox" name="hobbies" value="music">
+                        <span class="checkboxname">Music</span>
+                    </label>
+                    <label class="category">
+                        <input class="checkbox" type="checkbox" name="hobbies" value="sports">
+                        <span class="checkboxname">Sports</span>
+                    </label>
+                    <label class="category">
+                        <input class="checkbox" type="checkbox" name="hobbies" value="travel">
+                        <span class="checkboxname">Travel</span>
+                    </label>
+                    <label class="category">
+                        <input class="checkbox" type="checkbox" name="hobbies" value="movies">
+                        <span class="checkboxname">Movies</span>
+                    </label>
+                </div>
+            </div>
+            <div class="info8">
+                <label for="incomesource">Source of income</label><br>
+                <select id="incomesource" class="incomesource">
+                    <option value="fulltime">Full-time employed</option>
+                    <option value="partime">Part-time employed</option>
+                    <option value="selfemployed">Self-employed</option>
+                    <option value="employee">Employee</option>
+                    <option value="unemployed">Unemployed</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="">Income</label>
+                <div class="range-group">
+                  <input type="range">
+                  <label>20K</label>
+                </div>
+            </div>
+            <div class="info10">
+                <label for="picture">Upload Profile Picture</label><br>
+                <label class="category filebutton" for="picture">
+                    <input class="file" type="file" name="picture" id="picture">
+                    <span class="fileicon">Choose a file</span>
+                    <span class="filetext" id="filetext">No file chosen</span>
+                </label>
+            </div>
+            <div class="info11">
+                <label for="age">Age</label>
+                <input type="number" name="age" placeholder="18">
+            </div>
+            <div class="info12">
+                <label for="bio">Bio</label><br>
+                <textarea name="bio" placeholder="Tell us about yourself"></textarea>
+            </div>
+            <div class="info13">
+                <div class="info13_1">
+                    <button class="create">Create</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+<script></script>
+</html>
